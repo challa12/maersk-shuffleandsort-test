@@ -1,7 +1,21 @@
+@font-face {
+    font-family: fontLight;
+    src: url("assets/fonts/Poppins-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: fontRegular;
+    src: url("assets/fonts/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: fontMedium;
+    src: url("assets/fonts/Poppins-Medium.otf") format("opentype");
+}
+
 input:focus,
 button:focus {
     outline: none;
 }
+
 body {
     margin: 0px;
     background-color: #efefef;
@@ -9,13 +23,16 @@ body {
 .title {
     padding: 20px;
     font-size: 25px;
+    font-family: fontRegular;
     background-color: #ffffff;
     border-bottom: 5px #bfbfbf solid;
 }
+
 .layout-container {
     display: flex;
     flex-direction: row;
     padding: 10px;
+    font-family: fontMedium;
 }
 .list-container {
     width: 80%;
@@ -24,8 +41,8 @@ body {
     padding: 10px;
 }
 .list-item {
-    padding: 50px;
-    font-size: 80px;
+    padding: 30px;
+    font-size: 100px;
     text-align: center;
     color: #ffffff;
 }
@@ -39,6 +56,7 @@ body {
     border: none;
     box-shadow: 0 5px 0px #6f98a8;
     text-transform: uppercase;
+    font-family: fontRegular;
 }
 
 .btn-container {
@@ -51,7 +69,7 @@ body {
     margin: 10px;
 }
 .footer {
-    background-color: #efefef;
+    font-family: fontLight;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
