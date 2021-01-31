@@ -1,4 +1,3 @@
-# ShuffleAndSort
 
 **MAERSK - UI Engineer Coding Exercise**
 

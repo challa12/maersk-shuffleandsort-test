@@ -1,7 +1,7 @@
 
 
 
-/** Event listener on window resize to indentify desktop & mobile resolution */
+/** window resize to indentify desktop & mobile resolution */
 window.addEventListener('resize', () => {
     applyColors();
 });
@@ -13,9 +13,9 @@ setTimeout(() => {
 
 
 
-/** function to apply the background color / border to each div item in the Grid List */
+/** by using this function to apply the background color / border to each div item in the Grid List */
 const applyColors = () => {
-    /** Given Set of Colors taken as array */
+    /** Given Set of Colors */
     let colorArray = ['#6F98A8', '#2B8EAD', '#2F454E', '#2B8EAD', '#2F454E', '#BFBFBF', '#BFBFBF', '#6F98A8', '#2F454E'];
 
     if (window.innerWidth <= 767) { // non-dekstop
@@ -33,7 +33,7 @@ const applyColors = () => {
 }
 
 
-/** function to shuffle the list cards */
+/** by using this function to shuffle the list cards */
 const shuffle = () => {
     let section = document.querySelector('section');
     for (let i = section.children.length; i >= 0; i--) {
